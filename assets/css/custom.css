@@ -9,12 +9,16 @@
 }
  
 .navBlue{
-    background-color: #0002A1;
+    background-color: #04009A;
     color: #ffff;
 }
 
 .textWhite{
     color: #ffff;
+}
+
+.textBlue{
+    color: #0002A1;
 }
 
 .locationBTN{
