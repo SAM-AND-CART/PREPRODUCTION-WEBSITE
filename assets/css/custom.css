@@ -21,6 +21,13 @@
     color: #0002A1;
 }
 
+.btnColor{
+    color: #ffff;
+}
+.btnColor:hover{
+    color: #E14D2A;
+}
+
 .locationBTN{
     --fc-btn-color: #ffffff;
     --fc-btn-border-color: #ffffff;
