@@ -28,6 +28,10 @@
     color: #E14D2A;
 }
 
+.categories-images{
+    width: 100%;
+}
+
 .locationBTN{
     --fc-btn-color: #ffffff;
     --fc-btn-border-color: #ffffff;
