@@ -12363,7 +12363,8 @@ fieldset:disabled .btn {
 }
 .btn-primary {
   --fc-btn-color: #fff;
-  --fc-btn-bg: #E14D2A;
+  /* --fc-btn-bg: #E14D2A; */
+  --fc-btn-bg: #DC552C;
   --fc-btn-border-color: #E14D2A;
   --fc-btn-hover-color: #fff;
   --fc-btn-hover-bg: #FF731D;
