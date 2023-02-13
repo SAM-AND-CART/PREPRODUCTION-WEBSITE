@@ -9558,8 +9558,8 @@ progress {
   --fc-gutter-y: 0;
   margin-left: auto;
   margin-right: auto;
-  padding-left: calc(var(--fc-gutter-x) * 0.5);
-  padding-right: calc(var(--fc-gutter-x) * 0.5);
+  padding-left: calc(var(--fc-gutter-x) * 0.3);
+  padding-right: calc(var(--fc-gutter-x) * 0.3);
   width: 100%;
 }
 @media (min-width: 576px) {
@@ -9589,7 +9589,7 @@ progress {
   .container-md,
   .container-sm,
   .container-xl {
-    max-width: 1140px;
+    max-width: 1230px;
   }
 }
 @media (min-width: 1400px) {
@@ -9599,7 +9599,7 @@ progress {
   .container-sm,
   .container-xl,
   .container-xxl {
-    max-width: 1320px;
+    max-width: 1450px;
   }
 }
 .row {
