@@ -1,5 +1,8 @@
 .logoSizer{
- width: 70%;
+ width: 90%;
+}
+.logoLOCk{
+    width: 70%;
 }
 .logoHome{
  width: 60%;
@@ -57,4 +60,60 @@ width: 50%;
 
 .moblieSearch{
     display: hidden;
+}
+
+.nav-container,
+.nav-container-fluid,
+.nav-container-lg,
+.nav-container-md,
+.nav-container-sm,
+.nav-container-xl,
+.nav-container-xxl {
+  --fc-gutter-x: 1.5rem;
+  --fc-gutter-y: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: calc(var(--fc-gutter-x) * 0.3);
+  padding-right: calc(var(--fc-gutter-x) * 0.3);
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .nav-container,
+  .nav-container-sm {
+    max-width: 690px;
+  }
+}
+@media (min-width: 768px) {
+  .nav-container,
+  .nav-container-md,
+  .nav-container-sm {
+    max-width: 900px;
+  }
+}
+@media (min-width: 992px) {
+  .nav-container,
+  .nav-container-lg,
+  .nav-container-md,
+  .nav-container-sm {
+    max-width: 1092px;
+  }
+}
+@media (min-width: 1200px) {
+  .nav-container,
+  .nav-container-lg,
+  .nav-container-md,
+  .nav-container-sm,
+  .nav-container-xl {
+    max-width: 1300px;
+  }
+}
+@media (min-width: 1400px) {
+  .nav-container,
+  .nav-container-lg,
+  .nav-container-md,
+  .nav-container-sm,
+  .nav-container-xl,
+  .nav-container-xxl {
+    max-width: 1500px;
+  }
 }

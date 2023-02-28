@@ -41,37 +41,28 @@
     <div class="border-bottom">
       <!-- navigation -->
       <div class="py-4 pt-lg-3 pb-lg-0 navBlue">
-        <div class="container">
+        <div class="nav-container">
           <div class="row w-100 align-items-center gx-lg-2 gx-0">
-            <div class="col-xxl-2 col-lg-3">
+            <div class="col-xxl-2 col-lg-2">
               <a class="navbar-brand d-none d-lg-block" href="index.html">
                 <img class="logoSizer" src="assets/images/logo/WHITE V.svg" alt="SamandCart" />
               </a>
-
+    
               <div class="d-flex justify-content-between w-100 d-lg-none">
                 <a class="navbar-brand" href="index.html">
                   <img class="logoMoblie" src="assets/images/logo/WHITE V.svg" alt="SamandCart" />
                 </a>
-
+    
                 <div class="d-flex align-items-center lh-1">
                   <!-- nav element for mobile -->
                   <div class="list-inline me-4">
                     <div class="list-inline-item">
                       <div class="dropdown d-block">
-                        <a href="#" class="btnColor" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" href="#offcanvasExample" role="button" aria-controls="offcanvasRight">
-                          <span
-                            ><svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="20"
-                              height="20"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              stroke="white"
-                              stroke-width="3"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              class="feather feather-shopping-cart align-text-bottom"
-                            >
+                        <a href="#" class="btnColor" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                          href="#offcanvasExample" role="button" aria-controls="offcanvasRight">
+                          <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                              fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                              class="feather feather-shopping-cart align-text-bottom">
                               <circle cx="9" cy="21" r="1"></circle>
                               <circle cx="20" cy="21" r="1"></circle>
                               <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
@@ -82,43 +73,28 @@
                     </div>
                   </div>
                   <!-- Button -->
-                  <button
-                    class="navbar-toggler collapsed"
-                    type="button"
-                    data-bs-toggle="offcanvas"
-                    data-bs-target="#navbar-default"
-                    aria-controls="navbar-default"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-text-indent-left text-white" viewBox="0 0 16 16">
+                  <button class="navbar-toggler collapsed" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                      class="bi bi-text-indent-left text-white" viewBox="0 0 16 16">
                       <path
-                        d="M2 3.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm.646 2.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L4.293 8 2.646 6.354a.5.5 0 0 1 0-.708zM7 6.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm-5 3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"
-                      />
+                        d="M2 3.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm.646 2.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L4.293 8 2.646 6.354a.5.5 0 0 1 0-.708zM7 6.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm-5 3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
                     </svg>
                   </button>
                 </div>
               </div>
             </div>
-
-            <div class="col-xxl-6 col-lg-3 d-lg-block p-2">
+    
+            <div class="col-xxl-6 col-lg-5 d-lg-block p-2">
               <form action="#">
-                <div class="input-group">
-                  <input class="form-control rounded" type="search" placeholder="Search for products" />
+                <div class="input-group ">
+                  <input class="form-control rounded" type="search" placeholder="Search for products" id="searchInput">
                   <span class="input-group-append">
                     <button class="btn bg-white border border-start-0 ms-n10 rounded-0 rounded-end" type="button">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="black"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="feather feather-search"
-                      >
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-search">
                         <circle cx="11" cy="11" r="8"></circle>
                         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                       </svg>
@@ -126,30 +102,25 @@
                   </span>
                 </div>
               </form>
-            </div>
 
+              
+            </div>
+    
             <div class="col-md-1 col-xxl-1 d-none d-lg-block">
-              <!-- Button trigger modal -->
-              <button type="button" class="btn locationBTN" data-bs-toggle="modal" data-bs-target="#locationModal"><i class="feather-icon icon-map-pin"></i>Locations</button>
+              
+              <button type="button" class="btn locationBTN" data-bs-toggle="modal" data-bs-target="#locationModal"><i class="feather-icon icon-map-pin me-2"></i>Locations</button>
             </div>
-
-            <div class="col-md-5 col-xxl-3 text-center d-none d-lg-block">
+    
+            <div class="ol-xl-5 col-lg-4 text-center d-lg-block d-none">
               <div class="list-inline">
                 <div class="list-inline-item">
                   <a href="./wishlist.html" class="text-muted position-relative">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="feather feather-heart"
-                    >
-                      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                      stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-heart">
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                      </path>
                     </svg>
                     <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
                       5
@@ -157,37 +128,28 @@
                     </span>
                   </a>
                 </div>
-
+    
                 <div class="list-inline-item me-3">
                   <a href="signup.html" class="btnColor nav-link"> Register </a>
                 </div>
-
+    
                 <div class="list-inline-item">
                   <div class="dropdown d-none d-lg-block">
-                    <a href="#" class="dropdown-toggle btnColor" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" href="#offcanvasExample" role="button" aria-controls="offcanvasRight">
-                      <span
-                        ><svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="white"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          class="feather feather-shopping-cart align-text-bottom"
-                        >
+                    <a href="#" class="dropdown-toggle btnColor" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                      href="#offcanvasExample" role="button" aria-controls="offcanvasRight">
+                      <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                          stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                          class="feather feather-shopping-cart align-text-bottom">
                           <circle cx="9" cy="21" r="1"></circle>
                           <circle cx="20" cy="21" r="1"></circle>
-                          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg
-                      ></span>
-
+                          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg></span>
+    
                       <span>₦0.00</span>
                     </a>
                   </div>
                 </div>
-
+    
                 <div class="list-inline-item me-3">
                   <a href="signin.html" class="btn btn-primary"> Sign In </a>
                 </div>
@@ -196,29 +158,21 @@
           </div>
         </div>
       </div>
-
+    
       <nav class="navbar navbar-expand-lg navbar-light navbar-default py-0 py-lg-4 navBlue">
         <div class="container px-0 px-md-3">
           <div class="dropdown me-3 d-none d-lg-block">
-            <button class="btn btn-primary px-6" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn-primary px-6" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+              aria-expanded="false">
               <span class="me-1">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="white"
-                  stroke-width="1.2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="feather feather-grid"
-                >
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-grid">
                   <rect x="3" y="3" width="7" height="7"></rect>
                   <rect x="14" y="3" width="7" height="7"></rect>
                   <rect x="14" y="14" width="7" height="7"></rect>
-                  <rect x="3" y="14" width="7" height="7"></rect></svg
-              ></span>
+                  <rect x="3" y="14" width="7" height="7"></rect>
+                </svg></span>
               All Categories
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -237,39 +191,24 @@
               <li><a class="dropdown-item" href="categories-page.html">Others</a></li>
             </ul>
           </div>
-
+    
           <div class="offcanvas offcanvas-start p-4 p-lg-0" id="navbar-default">
             <div class="d-flex justify-content-between align-items-center mb-2 d-block d-lg-none">
-              <a href="index.html"><img src="assets/images/logo/BLUE.svg" alt="eCommerce HTML Template" class="logoMoblie" /></a>
+              <a href="index.html"><img src="assets/images/logo/BLUE.svg" alt="eCommerce HTML Template"
+                  class="logoMoblie" /></a>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="d-block d-lg-none mb-4">
-              <a
-                class="btn btn-primary w-100 d-flex justify-content-center align-items-center"
-                data-bs-toggle="collapse"
-                href="#collapseExample"
-                role="button"
-                aria-expanded="false"
-                aria-controls="collapseExample"
-              >
-                <span class="me-2"
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="white"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="feather feather-grid"
-                  >
+              <a class="btn btn-primary w-100 d-flex justify-content-center align-items-center" data-bs-toggle="collapse"
+                href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <span class="me-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                    fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-grid">
                     <rect x="3" y="3" width="7" height="7"></rect>
                     <rect x="14" y="3" width="7" height="7"></rect>
                     <rect x="14" y="14" width="7" height="7"></rect>
-                    <rect x="3" y="14" width="7" height="7"></rect></svg
-                ></span>
+                    <rect x="3" y="14" width="7" height="7"></rect>
+                  </svg></span>
                 All Categories
               </a>
               <div class="collapse mt-2" id="collapseExample">
@@ -295,9 +234,10 @@
             <!-- Nav bar for desktop -->
             <div class="d-none d-lg-block">
               <ul class="navbar-nav align-items-center">
-               
+    
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle textWhite" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle textWhite" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     My Account
                   </a>
                   <ul class="dropdown-menu">
@@ -306,16 +246,17 @@
                     <li><a class="dropdown-item" href="./wishlist.html">My Wishlist</a></li>
                   </ul>
                 </li>
-
+    
                 <li class="nav-item ">
                   <a class="nav-link textWhite" href="./stores.html">
                     Official Stores
                   </a>
-      
+    
                 </li>
-
+    
                 <li class="nav-item dropdown dropdown-fullwidth">
-                  <a class="nav-link dropdown-toggle textWhite" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Computing</a>
+                  <a class="nav-link dropdown-toggle textWhite" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false"> Computing</a>
                   <div class="dropdown-menu pb-0">
                     <div class="row p-2 p-lg-4">
                       <div class="col-lg-3 col-6 mb-4 mb-lg-0">
@@ -363,9 +304,10 @@
                     </div>
                   </div>
                 </li>
-
+    
                 <li class="nav-item dropdown dropdown-fullwidth">
-                  <a class="nav-link dropdown-toggle textWhite" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Phones and Tablets </a>
+                  <a class="nav-link dropdown-toggle textWhite" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false"> Phones and Tablets </a>
                   <div class="dropdown-menu pb-0">
                     <div class="row p-2 p-lg-4">
                       <div class="col-lg-3 col-6 mb-4 mb-lg-0">
@@ -413,9 +355,10 @@
                     </div>
                   </div>
                 </li>
-
+    
                 <li class="nav-item dropdown dropdown-fullwidth">
-                  <a class="nav-link dropdown-toggle textWhite" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Sam's Fashion </a>
+                  <a class="nav-link dropdown-toggle textWhite" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false"> Sam's Fashion </a>
                   <div class="dropdown-menu pb-0">
                     <div class="row p-2 p-lg-4">
                       <div class="col-lg-3 col-6 mb-4 mb-lg-0">
@@ -463,9 +406,10 @@
                     </div>
                   </div>
                 </li>
-
+    
                 <li class="nav-item dropdown dropdown-fullwidth">
-                  <a class="nav-link dropdown-toggle textWhite" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home & Kitchen</a>
+                  <a class="nav-link dropdown-toggle textWhite" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">Home & Kitchen</a>
                   <div class="dropdown-menu pb-0">
                     <div class="row p-2 p-lg-4">
                       <div class="col-lg-3 col-6 mb-4 mb-lg-0">
@@ -513,9 +457,10 @@
                     </div>
                   </div>
                 </li>
-
+    
                 <li class="nav-item dropdown dropdown-fullwidth">
-                  <a class="nav-link dropdown-toggle textWhite" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Other Categories</a>
+                  <a class="nav-link dropdown-toggle textWhite" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">Other Categories</a>
                   <div class="dropdown-menu pb-0">
                     <div class="row p-2 p-lg-4">
                       <div class="col-lg-3 col-6 mb-4 mb-lg-0">
@@ -563,11 +508,11 @@
                     </div>
                   </div>
                 </li>
-
-               
+    
+    
               </ul>
             </div>
-
+    
             <!-- nav bar for mobile -->
             <div class="d-block d-lg-none h-100" data-simplebar="">
               <ul class="navbar-nav">
@@ -578,10 +523,12 @@
                   <a class="nav-link" href="./stores.html">Official Stores </a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Shop </a>
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false"> Shop </a>
                   <ul class="dropdown-menu">
                     <li class="dropdown-submenu">
-                      <a class="dropdown-item dropdown-list-group-item dropdown-toggle" href="./categories-page.html">Supermarket</a>
+                      <a class="dropdown-item dropdown-list-group-item dropdown-toggle"
+                        href="./categories-page.html">Supermarket</a>
                       <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="./categories-page.html">Drinks</a></li>
                         <li><a class="dropdown-item" href="./categories-page.html">Curd & Yogurt</a></li>
@@ -589,7 +536,8 @@
                       </ul>
                     </li>
                     <li class="dropdown-submenu">
-                      <a class="dropdown-item dropdown-list-group-item dropdown-toggle" href="./categories-page.html"> Health and Beauty</a>
+                      <a class="dropdown-item dropdown-list-group-item dropdown-toggle" href="./categories-page.html">
+                        Health and Beauty</a>
                       <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="./categories-page.html">Soft Drinks</a></li>
                         <li><a class="dropdown-item" href="./categories-page.html">Fruit Juices</a></li>
@@ -597,7 +545,8 @@
                       </ul>
                     </li>
                     <li class="dropdown-submenu">
-                      <a class="dropdown-item dropdown-list-group-item dropdown-toggle" href="./categories-page.html"> Electronics</a>
+                      <a class="dropdown-item dropdown-list-group-item dropdown-toggle" href="./categories-page.html">
+                        Electronics</a>
                       <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="./categories-page.html">Vegetables</a></li>
                         <li><a class="dropdown-item" href="./categories-page.html">Fruits</a></li>
@@ -605,7 +554,8 @@
                       </ul>
                     </li>
                     <li class="dropdown-submenu">
-                      <a class="dropdown-item dropdown-list-group-item dropdown-toggle" href="./categories-page.html"> Electronics</a>
+                      <a class="dropdown-item dropdown-list-group-item dropdown-toggle" href="./categories-page.html">
+                        Electronics</a>
                       <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="./categories-page.html">Vegetables</a></li>
                         <li><a class="dropdown-item" href="./categories-page.html">Fruits</a></li>
@@ -613,7 +563,8 @@
                       </ul>
                     </li>
                     <li class="dropdown-submenu">
-                      <a class="dropdown-item dropdown-list-group-item dropdown-toggle" href="./categories-page.html">Home and Office</a>
+                      <a class="dropdown-item dropdown-list-group-item dropdown-toggle" href="./categories-page.html">Home
+                        and Office</a>
                       <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="./categories-page.html">Vegetables</a></li>
                         <li><a class="dropdown-item" href="./categories-page.html">Fruits</a></li>
@@ -621,7 +572,8 @@
                       </ul>
                     </li>
                     <li class="dropdown-submenu">
-                      <a class="dropdown-item dropdown-list-group-item dropdown-toggle" href="./categories-page.html">Sam's Fashion</a>
+                      <a class="dropdown-item dropdown-list-group-item dropdown-toggle" href="./categories-page.html">Sam's
+                        Fashion</a>
                       <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="./categories-page.html">Vegetables</a></li>
                         <li><a class="dropdown-item" href="./categories-page.html">Fruits</a></li>
@@ -629,7 +581,8 @@
                       </ul>
                     </li>
                     <li class="dropdown-submenu">
-                      <a class="dropdown-item dropdown-list-group-item dropdown-toggle" href="./categories-page.html">Gaming</a>
+                      <a class="dropdown-item dropdown-list-group-item dropdown-toggle"
+                        href="./categories-page.html">Gaming</a>
                       <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="./categories-page.html">Vegetables</a></li>
                         <li><a class="dropdown-item" href="./categories-page.html">Fruits</a></li>
@@ -638,9 +591,10 @@
                     </li>
                   </ul>
                 </li>
-
+    
                 <li class="nav-item">
-                  <a class="nav-link dropdown-toggle" ref="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> My Account </a>
+                  <a class="nav-link dropdown-toggle" ref="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    My Account </a>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="./account-orders.html">Orders</a></li>
                     <li><a class="dropdown-item" href="./wishlist.html">Saved Items</a></li>
@@ -654,7 +608,7 @@
         </div>
       </nav>
     </div>
-
+    
     <!-- Shop Cart -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
       <div class="offcanvas-header border-bottom">
