@@ -1,62 +1,65 @@
-.logoSizer{
- width: 90%;
+/** @format */
+
+.logoSizer {
+  width: 100%;
 }
-.logoHome{
- width: 60%;
+.logoHome {
+  width: 60%;
 }
-.logoSizer1{
- width: 30%;
-}
-.logoMoblie{
- width: 50%;
-}
-.productSize{
-width: 50%;
-}
- 
-.navBlue{
-    background-color: #04009A;
-    color: #ffff;
+.errorPageLogo {
+  width: 30%;
 }
 
-.textWhite{
-    color: #ffff;
+.logoMoblie {
+  width: 50%;
+}
+.productSize {
+  width: 50%;
 }
 
-.textBlue{
-    color: #0002A1;
+.navBlue {
+  background-color: #04009a;
+  color: #ffff;
 }
 
-.btnColor{
-    color: #ffff;
-}
-.btnColor:hover{
-    color: #E14D2A;
+.textWhite {
+  color: #ffff;
 }
 
-.categories-images{
-    width: 60%;
+.textBlue {
+  color: #0002a1;
 }
 
-.locationBTN{
-    --fc-btn-color: #ffffff;
-    --fc-btn-border-color: #ffffff;
-    --fc-btn-hover-color: #000;
-    --fc-btn-hover-bg: #ffffff;
-    --fc-btn-hover-border-color: #ffffff;
-    --fc-btn-focus-shadow-rgb: 193, 199, 198;
-    --fc-btn-active-color: #000;
-    --fc-btn-active-bg: #ffffff;
-    --fc-btn-active-border-color: #ffffff;
-    --fc-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --fc-btn-disabled-color: #ffffff;
-    --fc-btn-disabled-bg: transparent;
-    --fc-btn-disabled-border-color: #ffffff;
-    --fc-gradient: none;
+.btnColor {
+  color: #ffff;
+}
+.btnColor:hover {
+  color: #e14d2a;
 }
 
-.moblieSearch{
-    display: hidden;
+.categories-images {
+  width: 60%;
+}
+
+.locationBTN {
+  --fc-btn-color: #ffffff;
+  --fc-btn-border-color: #ffffff;
+  --fc-btn-hover-color: #000;
+  --fc-btn-hover-bg: #ffffff;
+  --fc-btn-hover-border-color: #ffffff;
+  --fc-btn-focus-shadow-rgb: 193, 199, 198;
+  --fc-btn-active-color: #000;
+  --fc-btn-active-bg: #ffffff;
+  --fc-btn-active-border-color: #ffffff;
+  --fc-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --fc-btn-disabled-color: #ffffff;
+  --fc-btn-disabled-bg: transparent;
+  --fc-btn-disabled-border-color: #ffffff;
+  --fc-gradient: none;
+}
+
+.moblieSearch {
+  display: hidden;
 }
 
 .nav-container,
@@ -111,6 +114,6 @@ width: 50%;
   .nav-container-sm,
   .nav-container-xl,
   .nav-container-xxl {
-    max-width: 1400px;
+    max-width: 1450px;
   }
 }
