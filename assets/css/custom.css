@@ -1,5 +1,5 @@
 .logoSizer{
- width: 70%;
+ width: 90%;
 }
 .logoHome{
  width: 60%;
@@ -77,14 +77,14 @@ width: 50%;
 @media (min-width: 576px) {
   .nav-container,
   .nav-container-sm {
-    max-width: 690px;
+    max-width: 576px;
   }
 }
 @media (min-width: 768px) {
   .nav-container,
   .nav-container-md,
   .nav-container-sm {
-    max-width: 900px;
+    max-width: 768px;
   }
 }
 @media (min-width: 992px) {
@@ -92,7 +92,7 @@ width: 50%;
   .nav-container-lg,
   .nav-container-md,
   .nav-container-sm {
-    max-width: 1092px;
+    max-width: 992px;
   }
 }
 @media (min-width: 1200px) {
@@ -101,7 +101,7 @@ width: 50%;
   .nav-container-md,
   .nav-container-sm,
   .nav-container-xl {
-    max-width: 1300px;
+    max-width: 1200px;
   }
 }
 @media (min-width: 1400px) {
@@ -111,6 +111,6 @@ width: 50%;
   .nav-container-sm,
   .nav-container-xl,
   .nav-container-xxl {
-    max-width: 1500px;
+    max-width: 1400px;
   }
 }
