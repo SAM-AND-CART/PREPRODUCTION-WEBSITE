@@ -1,7 +1,7 @@
 /** @format */
 
 .logoSizer {
-  width: 100%;
+  width: 90%;
 }
 .logoHome {
   width: 60%;
@@ -62,7 +62,7 @@
   display: hidden;
 }
 
-.nav-container,
+/* .nav-container,
 .nav-container-fluid,
 .nav-container-lg,
 .nav-container-md,
@@ -116,4 +116,4 @@
   .nav-container-xxl {
     max-width: 1450px;
   }
-}
+} */
