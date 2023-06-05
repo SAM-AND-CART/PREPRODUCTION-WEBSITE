@@ -3,15 +3,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<title>SamandCart - you get what you put in the cart</title>
-<!-- Required meta tags -->
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes" />
-<meta name="description" content="" />
-<meta content="SamandCart" name="author" />
+<head>
+  <title>SamandCart - you get what you put in the cart</title>
+  <!-- Required meta tags -->
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes" />
+  <meta name="description" content="" />
+  <meta content="SamandCart" name="author" />
 
-<!-- Google tag (gtag.js) -->
-<!-- <script async src=""></script>
+  <!-- Google tag (gtag.js) -->
+  <!-- <script async src=""></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -20,17 +22,17 @@
     gtag('config', 'G-M8S4MT3EYG');
   </script> -->
 
-<!-- Favicon icon-->
-<link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon/favicon.ico" />
+  <!-- Favicon icon-->
+  <link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon/favicon.ico" />
 
-<!-- Libs CSS -->
-<link href="../assets/libs/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
-<link href="../assets/libs/feather-webfont/dist/feather-icons.css" rel="stylesheet" />
-<link href="../assets/libs/simplebar/dist/simplebar.min.css" rel="stylesheet" />
+  <!-- Libs CSS -->
+  <link href="../assets/libs/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="../assets/libs/feather-webfont/dist/feather-icons.css" rel="stylesheet" />
+  <link href="../assets/libs/simplebar/dist/simplebar.min.css" rel="stylesheet" />
 
-<!-- Theme CSS -->
-<link rel="stylesheet" href="../assets/css/theme.min.css" />
-<link rel="stylesheet" href="../assets/css/custom.css" />
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="../assets/css/theme.min.css" />
+  <link rel="stylesheet" href="../assets/css/custom.css" />
 </head>
 
 <body>
@@ -507,7 +509,6 @@
                   </div>
                 </div>
               </li>
-
             </ul>
           </div>
 
@@ -920,7 +921,6 @@
   <main>
     <!-- section -->
     <section>
-      <!-- container -->
       <div class="container">
         <!-- row -->
         <div class="row">
@@ -943,12 +943,11 @@
               <ul class="nav flex-column nav-pills nav-pills-dark">
                 <!-- nav item -->
                 <li class="nav-item">
-                  <a class="nav-link active" href="account-wallet.html"><i
+                  <a class="nav-link" href="account-wallet.html"><i
                       class="feather-icon icon-credit-card me-2"></i>Wallet</a>
                 </li>
                 <!-- nav item -->
                 <li class="nav-item">
-                  <!-- nav link -->
                   <a class="nav-link" aria-current="page" href="account-orders.html"><i
                       class="feather-icon icon-shopping-bag me-2"></i>Your Orders</a>
                 </li>
@@ -969,7 +968,7 @@
                 </li>
                 <!-- nav item -->
                 <li class="nav-item">
-                  <a class="nav-link" href="account-referrals.html"><i class="feather-icon icon-user me-2"></i>Referrals</a>
+                  <a class="nav-link active" href="account-referrals.html"><i class="feather-icon icon-user me-2"></i>Referrals</a>
                 </li>
                 <!-- nav item -->
                 <li class="nav-item">
@@ -987,16 +986,132 @@
               </ul>
             </div>
           </div>
-
           <div class="col-lg-9 col-md-8 col-12">
             <div class="py-6 p-md-6 p-lg-10">
-              <div class="d-flex justify-content-between mb-6">
-                <!-- heading -->
-                <h2 class="mb-0">User Wallet</h2>
-                <!-- button -->
-                <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#addAddressModal">Check Kyc Status</a>
-              </div>
+              <!-- heading --> 
               
+              <div class="card text-center">
+                <div class="card-header">
+                  <h2 class="mb-2">Your Referrals</h2>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Welcome to our Referral center</h5>
+                  <p class="card-text">Earn as an influencer and withdraw your rewards</p>
+                  <div class="row">
+                    <div class="col-6">
+                     <a href="#" class="btn btn-primary">Request for a Referrals code </a>
+                    </div>
+                    <div class="col-6">
+                      <a href="#" class="btn btn-primary">Copy Referral code</a>
+                    </div>
+                  </div>
+
+                </div>
+                <hr>
+                <div class="card-body">
+                  <div class="row">
+                    
+                    <div class="col-3">
+                      <p class="card-text">Status: <span class="badge bg-success">Active</span></p>
+              
+                    </div>
+                    <div class="col-3">
+                      <p class="card-text fw-bold">Referral Bonus: ₦<i class="text-success">72727</i></p>
+                    </div>
+                    <div class="col-3">
+                      <a href="#" class="card-link">withdraw bonus</a>
+                    </div>
+                    <div class="col-3">
+                      <p class="card-text fw-bold">Stats: <i class="text-success">5 </i>invites</p>
+                    </div>
+                  </div>
+              
+                </div>
+              </div>
+
+
+              <div class="table-responsive-xxl border-0">
+                <!-- Table -->
+                <table class="table mb-0 text-nowrap table-centered">
+                  <!-- Table Head -->
+                  <thead class="bg-light">
+                    <tr>
+                      <!-- <th>&nbsp;</th> -->
+                      <th>Name</th>
+                      <th>Phone number</th>
+                      <th>Date</th>
+                      <th>Status</th>
+                      <th>Reward</th>
+
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- Table body -->
+                    <tr>
+                      <td class="align-middle border-top-0">
+                        <a href="#" class="fw-semi-bold text-inherit">
+                          <h6 class="mb-0">Haldiram</h6>
+                        </a>
+                      </td>
+                      <td class="align-middle border-top-0">
+                        <a href="#" class="text-inherit">02222212123</a>
+                      </td>
+                      <td class="align-middle border-top-0">March 5, 2023</td>
+                      <td class="align-middle border-top-0">
+                        <span class="badge bg-warning">Processing</span>
+                      </td>
+                      <td class="align-middle border-top-0">₦15.00</td>
+                      <td class="text-muted align-middle border-top-0">
+                        <a href="#" class="text-inherit" data-bs-toggle="tooltip" data-bs-placement="top"
+                          data-bs-title="View"><i class="feather-icon icon-eye"></i></a>
+                      </td>
+                    </tr>
+                    
+                    <tr>
+                      <td class="align-middle border-top-0">
+                        <a href="#" class="fw-semi-bold text-inherit">
+                          <h6 class="mb-0">Haldiram</h6>
+                        </a>
+                      </td>
+                      <td class="align-middle border-top-0">
+                        <a href="#" class="text-inherit">02222212123</a>
+                      </td>
+                      <td class="align-middle border-top-0">March 5, 2023</td>
+                      <td class="align-middle border-top-0">
+                        <span class="badge bg-warning">Processing</span>
+                      </td>
+                      <td class="align-middle border-top-0">₦15.00</td>
+                      <td class="text-muted align-middle border-top-0">
+                        <a href="#" class="text-inherit" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="View"><i
+                            class="feather-icon icon-eye"></i></a>
+                      </td>
+                    </tr>
+                    
+                    <tr>
+                      <td class="align-middle border-top-0">
+                        <a href="#" class="fw-semi-bold text-inherit">
+                          <h6 class="mb-0">Haldiram</h6>
+                        </a>
+                      </td>
+                      <td class="align-middle border-top-0">
+                        <a href="#" class="text-inherit">02222212123</a>
+                      </td>
+                      <td class="align-middle border-top-0">March 5, 2023</td>
+                      <td class="align-middle border-top-0">
+                        <span class="badge bg-warning">Processing</span>
+                      </td>
+                      <td class="align-middle border-top-0">₦15.00</td>
+                      <td class="text-muted align-middle border-top-0">
+                        <a href="#" class="text-inherit" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="View"><i
+                            class="feather-icon icon-eye"></i></a>
+                      </td>
+                    </tr>
+
+
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </div>
@@ -1004,12 +1119,11 @@
     </section>
   </main>
 
-  
-  <!-- Modal -->
-  
   <!-- modal -->
+
   <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasAccount" aria-labelledby="offcanvasAccountLabel">
-    <!-- offcanvac header -->
+    <!-- offcanvas header -->
+    <!-- offcanvas header -->
     <div class="offcanvas-header">
       <h5 class="offcanvas-title" id="offcanvasAccountLabel">User Dashboard</h5>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -1020,8 +1134,7 @@
       <ul class="nav flex-column nav-pills nav-pills-dark">
         <!-- nav item -->
         <li class="nav-item">
-          <a class="nav-link active" href="account-wallet.html"><i
-              class="feather-icon icon-credit-card me-2"></i>Wallet</a>
+          <a class="nav-link " href="account-wallet.html"><i class="feather-icon icon-credit-card me-2"></i>Wallet</a>
         </li>
         <!-- nav item -->
         <li class="nav-item">
@@ -1045,7 +1158,7 @@
         </li>
         <!-- nav item -->
         <li class="nav-item">
-          <a class="nav-link" href="account-referrals.html"><i class="feather-icon icon-user me-2"></i>Referrals</a>
+          <a class="nav-link active" href="account-referrals.html"><i class="feather-icon icon-user me-2"></i>Referrals</a>
         </li>
         <!-- nav item -->
         <li class="nav-item">
@@ -1064,7 +1177,6 @@
     </div>
   </div>
   </div>
-
   <!-- footer -->
   <footer class="footer pb-6 pt-4 pt-md-12">
     <div class="container">
