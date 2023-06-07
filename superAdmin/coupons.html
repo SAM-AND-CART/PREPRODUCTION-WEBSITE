@@ -94,7 +94,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="coupons.html">
+                <a class="nav-link active" href="coupons.html">
                   <div class="d-flex align-items-center">
                     <span class="nav-link-icon"> <i class="bi bi-ticket-detailed"></i></span>
                     <span class="nav-link-text">Coupons</span>
@@ -117,9 +117,9 @@
                   </div>
                 </a>
               </li>
-              
+
               <li class="nav-item">
-                <a class="nav-link active" href="vendor.html">
+                <a class="nav-link" href="vendor.html">
                   <div class="d-flex align-items-center">
                     <span class="nav-link-icon"> <i class="bi bi-shop"></i></span>
                     <span class="nav-link-text">Sellers / Vendors</span>
@@ -150,7 +150,7 @@
                   </div>
                 </a>
               </li>
-              
+
               <li class="nav-item">
                 <a class="nav-link" href="locations.html">
                   <div class="d-flex align-items-center">
@@ -159,7 +159,6 @@
                   </div>
                 </a>
               </li>
-
             </ul>
           </div>
         </div>
@@ -195,7 +194,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="coupons.html">
+                <a class="nav-link active" href="coupons.html">
                   <div class="d-flex align-items-center">
                     <span class="nav-link-icon"> <i class="bi bi-ticket-detailed"></i></span>
                     <span class="nav-link-text">Coupons</span>
@@ -218,9 +217,9 @@
                   </div>
                 </a>
               </li>
-              
+
               <li class="nav-item">
-                <a class="nav-link active" href="vendor.html">
+                <a class="nav-link" href="vendor.html">
                   <div class="d-flex align-items-center">
                     <span class="nav-link-icon"> <i class="bi bi-shop"></i></span>
                     <span class="nav-link-text">Sellers / Vendors</span>
@@ -251,7 +250,7 @@
                   </div>
                 </a>
               </li>
-              
+
               <li class="nav-item">
                 <a class="nav-link" href="locations.html">
                   <div class="d-flex align-items-center">
@@ -260,40 +259,49 @@
                   </div>
                 </a>
               </li>
-
             </ul>
           </div>
         </div>
       </nav>
-
       <!-- main -->
       <main class="main-content-wrapper">
         <div class="container">
+          <!-- row -->
           <div class="row mb-8">
             <div class="col-md-12">
-              <!-- page header -->
-              <div class="d-flex justify-content-between align-items-center">
+              <div class="d-md-flex justify-content-between align-items-center">
+                <!-- pageheader -->
                 <div>
-                  <h2>Vendors</h2>
-                  <!-- breacrumb -->
-
+                  <h2>Products</h2>
                 </div>
-
+                <!-- button -->
+                <div>
+                  <a href="add-product.html" class="btn btn-primary">Add New Product</a>
+                </div>
               </div>
             </div>
           </div>
           <!-- row -->
           <div class="row">
             <div class="col-xl-12 col-12 mb-5">
+              <!-- card -->
               <div class="card h-100 card-lg">
-                <div class="p-6">
-                  <div class="row">
-                    <!-- search bar -->
-                    <div class="col-md-4 col-12">
+                <div class="px-6 py-6">
+                  <div class="row justify-content-between">
+                    <!-- form -->
+                    <div class="col-lg-4 col-md-6 col-12 mb-2 mb-lg-0">
                       <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search Seller"
-                          aria-label="Search" />
+                        <input class="form-control" type="search" placeholder="Search Products" aria-label="Search" />
                       </form>
+                    </div>
+                    <!-- select option -->
+                    <div class="col-lg-2 col-md-4 col-12">
+                      <select class="form-select">
+                        <option selected>Status</option>
+                        <option value="1">Active</option>
+                        <option value="2">Deactive</option>
+                        <option value="3">Draft</option>
+                      </select>
                     </div>
                   </div>
                 </div>
@@ -301,25 +309,45 @@
                 <div class="card-body p-0">
                   <!-- table -->
                   <div class="table-responsive">
-                    <table class="table table-centered table-hover text-nowrap table-borderless mb-0">
+                    <table
+                      class="table table-centered table-hover text-nowrap table-borderless mb-0 table-with-checkbox">
                       <thead class="bg-light">
                         <tr>
-                          <th>Seller Id</th>
-                          <th>Store Name</th>
-                          <th>Email</th>
-                          <th>Gross Sale</th>
-                          <th>Earning</th>
+                          <th>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="checkAll" />
+                              <label class="form-check-label" for="checkAll"> </label>
+                            </div>
+                          </th>
+                          <th>Image</th>
+                          <th>Product Name</th>
+                          <th>Sub-Category</th>
+                          <th>Status</th>
+                          <th>Price</th>
+                          <th>Created on</th>
                           <th></th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td>#010</td>
-                          <td><a href="#" class="text-reset">Samandcart</a></td>
-                          <td>egrocery@dayrep.com</td>
+                          <td>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="productOne" />
+                              <label class="form-check-label" for="productOne"> </label>
+                            </div>
+                          </td>
+                          <td>
+                            <a href="#!"> <img src="../assets/images/products/product-img-1.jpg" alt=""
+                                class="icon-shape icon-md" /></a>
+                          </td>
+                          <td><a href="#" class="text-reset">Haldiram's Sev Bhujia</a></td>
+                          <td>Groceries</td>
 
-                          <td>₦200.00</td>
-                          <td>₦60.00</td>
+                          <td>
+                            <span class="badge bg-light-primary text-dark-primary">Active</span>
+                          </td>
+                          <td>₦18.00</td>
+                          <td>24 Nov 2022</td>
                           <td>
                             <div class="dropdown">
                               <a href="#" class="text-reset" data-bs-toggle="dropdown" aria-expanded="false">
@@ -330,20 +358,32 @@
                                   <a class="dropdown-item" href="#"><i class="bi bi-trash me-3"></i>Delete</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item" href="#"><i class="bi bi-pencil-square me-3"></i>Edit</a>
+                                  <a class="dropdown-item" href="edit-product.html"><i
+                                      class="bi bi-pencil-square me-3"></i>Edit</a>
                                 </li>
                               </ul>
                             </div>
                           </td>
                         </tr>
                         <tr>
-                          <td>#009</td>
-                          <td><a href="#" class="text-reset">DealShare Mart</a></td>
-                          <td>werve1962@superrito.com</td>
+                          <td>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="productTwo" />
+                              <label class="form-check-label" for="productTwo"> </label>
+                            </div>
+                          </td>
+                          <td>
+                            <a href="#!"> <img src="../assets/images/products/product-img-2.jpg" alt=""
+                                class="icon-shape icon-md" /></a>
+                          </td>
+                          <td><a href="#" class="text-reset">NutriChoice Digestive</a></td>
+                          <td>Groceries</td>
 
-                          <td>₦350.00</td>
-                          <td>₦150.00</td>
-
+                          <td>
+                            <span class="badge bg-light-primary text-dark-primary">Active</span>
+                          </td>
+                          <td>₦24.00</td>
+                          <td>20 Nov 2022</td>
                           <td>
                             <div class="dropdown">
                               <a href="#" class="text-reset" data-bs-toggle="dropdown" aria-expanded="false">
@@ -354,20 +394,32 @@
                                   <a class="dropdown-item" href="#"><i class="bi bi-trash me-3"></i>Delete</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item" href="#"><i class="bi bi-pencil-square me-3"></i>Edit</a>
+                                  <a class="dropdown-item" href="edit-product.html"><i
+                                      class="bi bi-pencil-square me-3"></i>Edit</a>
                                 </li>
                               </ul>
                             </div>
                           </td>
                         </tr>
                         <tr>
-                          <td>#008</td>
-                          <td><a href="#" class="text-reset">DMart</a></td>
-                          <td>trablinever@armyspy.com</td>
+                          <td>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="productThree" />
+                              <label class="form-check-label" for="productThree"> </label>
+                            </div>
+                          </td>
+                          <td>
+                            <a href="#!"> <img src="../assets/images/products/product-img-3.jpg" alt=""
+                                class="icon-shape icon-md" /></a>
+                          </td>
+                          <td><a href="#" class="text-reset">Cadbury 5 Star Chocolate</a></td>
+                          <td>Groceries</td>
 
-                          <td>₦120.00</td>
-                          <td>₦45.00</td>
-
+                          <td>
+                            <span class="badge bg-light-primary text-dark-primary">Active</span>
+                          </td>
+                          <td>₦3.00</td>
+                          <td>14 Nov 2022</td>
                           <td>
                             <div class="dropdown">
                               <a href="#" class="text-reset" data-bs-toggle="dropdown" aria-expanded="false">
@@ -378,20 +430,32 @@
                                   <a class="dropdown-item" href="#"><i class="bi bi-trash me-3"></i>Delete</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item" href="#"><i class="bi bi-pencil-square me-3"></i>Edit</a>
+                                  <a class="dropdown-item" href="edit-product.html"><i
+                                      class="bi bi-pencil-square me-3"></i>Edit</a>
                                 </li>
                               </ul>
                             </div>
                           </td>
                         </tr>
                         <tr>
-                          <td>#007</td>
-                          <td><a href="#" class="text-reset">Blinkit Store</a></td>
-                          <td>steened@rhyta.com</td>
+                          <td>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="productFour" />
+                              <label class="form-check-label" for="productFour"> </label>
+                            </div>
+                          </td>
+                          <td>
+                            <a href="#!"> <img src="../assets/images/products/product-img-4.jpg" alt=""
+                                class="icon-shape icon-md" /></a>
+                          </td>
+                          <td><a href="#" class="text-reset">Onion Flavour Potato</a></td>
+                          <td>Groceries</td>
 
-                          <td>₦1200.00</td>
-                          <td>₦400.00</td>
-
+                          <td>
+                            <span class="badge bg-light-warning text-dark-warning">Draft</span>
+                          </td>
+                          <td>₦13.00</td>
+                          <td>08 Nov 2022</td>
                           <td>
                             <div class="dropdown">
                               <a href="#" class="text-reset" data-bs-toggle="dropdown" aria-expanded="false">
@@ -402,20 +466,32 @@
                                   <a class="dropdown-item" href="#"><i class="bi bi-trash me-3"></i>Delete</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item" href="#"><i class="bi bi-pencil-square me-3"></i>Edit</a>
+                                  <a class="dropdown-item" href="edit-product.html"><i
+                                      class="bi bi-pencil-square me-3"></i>Edit</a>
                                 </li>
                               </ul>
                             </div>
                           </td>
                         </tr>
                         <tr>
-                          <td>#006</td>
-                          <td><a href="#" class="text-reset">StoreFront Super Market</a></td>
-                          <td>mansper@einrot.com</td>
+                          <td>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="productFive" />
+                              <label class="form-check-label" for="productFive"> </label>
+                            </div>
+                          </td>
+                          <td>
+                            <a href="#!"> <img src="../assets/images/products/product-img-5.jpg" alt=""
+                                class="icon-shape icon-md" /></a>
+                          </td>
+                          <td><a href="#" class="text-reset">Salted Instant Popcorn</a></td>
+                          <td>Groceries</td>
 
-                          <td>₦230.00</td>
-                          <td>₦50.00</td>
-
+                          <td>
+                            <span class="badge bg-light-warning text-dark-warning">Draft</span>
+                          </td>
+                          <td>₦9.00</td>
+                          <td>09 Nov 2022</td>
                           <td>
                             <div class="dropdown">
                               <a href="#" class="text-reset" data-bs-toggle="dropdown" aria-expanded="false">
@@ -426,20 +502,32 @@
                                   <a class="dropdown-item" href="#"><i class="bi bi-trash me-3"></i>Delete</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item" href="#"><i class="bi bi-pencil-square me-3"></i>Edit</a>
+                                  <a class="dropdown-item" href="edit-product.html"><i
+                                      class="bi bi-pencil-square me-3"></i>Edit</a>
                                 </li>
                               </ul>
                             </div>
                           </td>
                         </tr>
                         <tr>
-                          <td>#005</td>
-                          <td><a href="#" class="text-reset">BigBasket</a></td>
-                          <td>lizin@armyspy.com</td>
+                          <td>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="productSix" />
+                              <label class="form-check-label" for="productSix"> </label>
+                            </div>
+                          </td>
+                          <td>
+                            <a href="#!"> <img src="../assets/images/products/product-img-6.jpg" alt=""
+                                class="icon-shape icon-md" /></a>
+                          </td>
+                          <td><a href="#" class="text-reset">Blueberry Greek Yogurt</a></td>
+                          <td>Groceries</td>
 
-                          <td>₦560.00</td>
-                          <td>₦120.00</td>
-
+                          <td>
+                            <span class="badge bg-light-danger text-dark-danger">Deactive</span>
+                          </td>
+                          <td>₦11.00</td>
+                          <td>02 Nov 2022</td>
                           <td>
                             <div class="dropdown">
                               <a href="#" class="text-reset" data-bs-toggle="dropdown" aria-expanded="false">
@@ -450,20 +538,32 @@
                                   <a class="dropdown-item" href="#"><i class="bi bi-trash me-3"></i>Delete</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item" href="#"><i class="bi bi-pencil-square me-3"></i>Edit</a>
+                                  <a class="dropdown-item" href="edit-product.html"><i
+                                      class="bi bi-pencil-square me-3"></i>Edit</a>
                                 </li>
                               </ul>
                             </div>
                           </td>
                         </tr>
                         <tr>
-                          <td>#004</td>
-                          <td><a href="#" class="text-reset">Swiggy Instamart</a></td>
-                          <td>tured@jourrapide.com</td>
+                          <td>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="productSeven" />
+                              <label class="form-check-label" for="productSeven"> </label>
+                            </div>
+                          </td>
+                          <td>
+                            <a href="#!"> <img src="../assets/images/products/product-img-7.jpg" alt=""
+                                class="icon-shape icon-md" /></a>
+                          </td>
+                          <td><a href="#" class="text-reset">Britannia Cheese Slices</a></td>
+                          <td>Groceries</td>
 
-                          <td>₦780.00</td>
-                          <td>₦360.00</td>
-
+                          <td>
+                            <span class="badge bg-light-success text-dark-success">Active</span>
+                          </td>
+                          <td>₦24.00</td>
+                          <td>15 Oct 2022</td>
                           <td>
                             <div class="dropdown">
                               <a href="#" class="text-reset" data-bs-toggle="dropdown" aria-expanded="false">
@@ -474,20 +574,32 @@
                                   <a class="dropdown-item" href="#"><i class="bi bi-trash me-3"></i>Delete</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item" href="#"><i class="bi bi-pencil-square me-3"></i>Edit</a>
+                                  <a class="dropdown-item" href="edit-product.html"><i
+                                      class="bi bi-pencil-square me-3"></i>Edit</a>
                                 </li>
                               </ul>
                             </div>
                           </td>
                         </tr>
                         <tr>
-                          <td>#003</td>
-                          <td><a href="#" class="text-reset">Online Grocery Mart</a></td>
-                          <td>liturname@einrot.com</td>
+                          <td>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="productEight" />
+                              <label class="form-check-label" for="productEight"> </label>
+                            </div>
+                          </td>
+                          <td>
+                            <a href="#!"> <img src="../assets/images/products/product-img-8.jpg" alt=""
+                                class="icon-shape icon-md" /></a>
+                          </td>
+                          <td><a href="#" class="text-reset">Blueberry Greek Yogurt</a></td>
+                          <td>Groceries</td>
 
-                          <td>₦460.00</td>
-                          <td>₦175.00</td>
-
+                          <td>
+                            <span class="badge bg-light-danger text-dark-danger">Deactive</span>
+                          </td>
+                          <td>₦12.00</td>
+                          <td>24 Oct 2022</td>
                           <td>
                             <div class="dropdown">
                               <a href="#" class="text-reset" data-bs-toggle="dropdown" aria-expanded="false">
@@ -498,20 +610,32 @@
                                   <a class="dropdown-item" href="#"><i class="bi bi-trash me-3"></i>Delete</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item" href="#"><i class="bi bi-pencil-square me-3"></i>Edit</a>
+                                  <a class="dropdown-item" href="edit-product.html"><i
+                                      class="bi bi-pencil-square me-3"></i>Edit</a>
                                 </li>
                               </ul>
                             </div>
                           </td>
                         </tr>
                         <tr>
-                          <td>#002</td>
-                          <td><a href="#" class="text-reset">Spencer</a></td>
-                          <td>fark1952@rhyta.com</td>
+                          <td>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="productNine" />
+                              <label class="form-check-label" for="productNine"> </label>
+                            </div>
+                          </td>
+                          <td>
+                            <a href="#!"> <img src="../assets/images/products/product-img-9.jpg" alt=""
+                                class="icon-shape icon-md" /></a>
+                          </td>
+                          <td><a href="#" class="text-reset">Slurrp Millet Chocolate</a></td>
+                          <td>Groceries</td>
 
-                          <td>₦630.00</td>
-                          <td>₦190.00</td>
-
+                          <td>
+                            <span class="badge bg-light-primary text-dark-primary">Active</span>
+                          </td>
+                          <td>₦8.00</td>
+                          <td>08 Oct 2022</td>
                           <td>
                             <div class="dropdown">
                               <a href="#" class="text-reset" data-bs-toggle="dropdown" aria-expanded="false">
@@ -522,20 +646,32 @@
                                   <a class="dropdown-item" href="#"><i class="bi bi-trash me-3"></i>Delete</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item" href="#"><i class="bi bi-pencil-square me-3"></i>Edit</a>
+                                  <a class="dropdown-item" href="edit-product.html"><i
+                                      class="bi bi-pencil-square me-3"></i>Edit</a>
                                 </li>
                               </ul>
                             </div>
                           </td>
                         </tr>
                         <tr>
-                          <td>#001</td>
-                          <td><a href="#" class="text-reset">Samandcart</a></td>
-                          <td>heathercarpenter@dayrep.com</td>
+                          <td>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="productTen" />
+                              <label class="form-check-label" for="productTen"> </label>
+                            </div>
+                          </td>
+                          <td>
+                            <a href="#!"> <img src="../assets/images/products/product-img-10.jpg" alt=""
+                                class="icon-shape icon-md" /></a>
+                          </td>
+                          <td><a href="#" class="text-reset">Amul Butter - 500 g</a></td>
+                          <td>Groceries</td>
 
-                          <td>₦200.00</td>
-                          <td>₦80.00</td>
-
+                          <td>
+                            <span class="badge bg-light-primary text-dark-primary">Active</span>
+                          </td>
+                          <td>₦8.00</td>
+                          <td>09 Oct 2022</td>
                           <td>
                             <div class="dropdown">
                               <a href="#" class="text-reset" data-bs-toggle="dropdown" aria-expanded="false">
@@ -546,7 +682,8 @@
                                   <a class="dropdown-item" href="#"><i class="bi bi-trash me-3"></i>Delete</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item" href="#"><i class="bi bi-pencil-square me-3"></i>Edit</a>
+                                  <a class="dropdown-item" href="edit-product.html"><i
+                                      class="bi bi-pencil-square me-3"></i>Edit</a>
                                 </li>
                               </ul>
                             </div>
@@ -556,7 +693,7 @@
                     </table>
                   </div>
                 </div>
-                <div class="border-top d-md-flex justify-content-between align-items-center p-6">
+                <div class="border-top d-md-flex justify-content-between align-items-center px-6 py-6">
                   <span>Showing 1 to 8 of 12 entries</span>
                   <nav class="mt-2 mt-md-0">
                     <ul class="pagination mb-0">
@@ -583,7 +720,5 @@
     <!-- Theme JS -->
     <script src="../assets/js/theme.min.js"></script>
 </body>
-
-<!-- Mirrored from SamandCart.codescandy.com/dashboard/vendor-list.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 Jan 2023 05:57:36 GMT -->
 
 </html>
