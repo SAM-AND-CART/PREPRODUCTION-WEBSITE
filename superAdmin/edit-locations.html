@@ -86,7 +86,7 @@
                 <span class="nav-label">Store Management</span>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="products.html">
+                <a class="nav-link" href="products.html">
                   <div class="d-flex align-items-center">
                     <span class="nav-link-icon"> <i class="bi bi-cart"></i></span>
                     <span class="nav-link-text">Products</span>
@@ -135,7 +135,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="coupons.html">
+                <a class="nav-link" href="referrals.html">
                   <div class="d-flex align-items-center">
                     <span class="nav-link-icon"> <i class="bi bi-person-plus-fill"></i></span>
                     <span class="nav-link-text">Referrals</span>
@@ -152,14 +152,13 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="locations.html">
+                <a class="nav-link active" href="locations.html">
                   <div class="d-flex align-items-center">
                     <span class="nav-link-icon"> <i class="bi bi-geo-alt"></i></span>
                     <span class="nav-link-text">Locations</span>
                   </div>
                 </a>
               </li>
-
             </ul>
           </div>
         </div>
@@ -187,7 +186,7 @@
                 <span class="nav-label">Store Management</span>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="products.html">
+                <a class="nav-link" href="products.html">
                   <div class="d-flex align-items-center">
                     <span class="nav-link-icon"> <i class="bi bi-cart"></i></span>
                     <span class="nav-link-text">Products</span>
@@ -236,7 +235,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="coupons.html">
+                <a class="nav-link" href="referrals.html">
                   <div class="d-flex align-items-center">
                     <span class="nav-link-icon"> <i class="bi bi-person-plus-fill"></i></span>
                     <span class="nav-link-text">Referrals</span>
@@ -253,7 +252,7 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="locations.html">
+                <a class="nav-link active" href="locations.html">
                   <div class="d-flex align-items-center">
                     <span class="nav-link-icon"> <i class="bi bi-geo-alt"></i></span>
                     <span class="nav-link-text">Locations</span>
@@ -264,27 +263,22 @@
           </div>
         </div>
       </nav>
-
       <!-- main -->
       <main class="main-content-wrapper">
-        <!-- container -->
         <div class="container">
-          <!-- row -->
           <div class="row mb-8">
             <div class="col-md-12">
               <div class="d-md-flex justify-content-between align-items-center">
-                <!-- page header -->
                 <div>
-                  <h2>Add New Product</h2>
+                  <h2>Edit Delivery Location</h2>
+                  <!-- breacrumb -->
 
                 </div>
-                <!-- button -->
-                <div>
-                  <a href="products.html" class="btn btn-light">Back to Product</a>
-                </div>
+
               </div>
             </div>
           </div>
+
           <!-- row -->
           <div class="row">
             <div class="col-lg-8 col-12">
@@ -292,52 +286,100 @@
               <div class="card mb-6 card-lg">
                 <!-- card body -->
                 <div class="card-body p-6">
-                  <h4 class="mb-4 h5">Product Information</h4>
-                  <div class="row">
-                    <!-- input -->
-                    <div class="mb-3 col-lg-6">
-                      <label class="form-label">Title</label>
-                      <input type="text" class="form-control" placeholder="Product Name" required />
-                    </div>
-                    <!-- input -->
-                    <div class="mb-3 col-lg-6">
-                      <label class="form-label">Product Category</label>
+                  <div class="mb-8">
+                    <!-- heading -->
+                    <h1 class="h3">Location Information</h1>
+                    <p class="lead mb-0">This form is for new Location
+                    </p>
+                  </div>
+                  <!-- form -->
+                  <form class="row">
+
+                    <div class="mb-3 col-12">
+                      <label class="form-label">Select Location Manager<span class="text-danger">*</span></label>
                       <select class="form-select">
-                        <option selected>Product Category</option>
-                        <option value="#">Supermarket</option>
-                        <option value="#">Health & Beauty</option>
-                        <option value="#">Home & Office</option>
-                        <option value="#">Engineering</option>
-                        <option value="#">Phones & Tablets</option>
-                        <option value="#">Computing</option>
-                        <option value="#">Electronics</option>
-                        <option value="#">Fashion</option>
-                        <option value="#">Baby products</option>
-                        <option value="#">Gaming</option>
-                        <option value="#">Sporting Goods</option>
-                        <option value="#">Automobile</option>
-                        <option value="#">Others</option>
+                        <option>Samandcart</option>
+                        <option>Peace Mass</option>
+                        <option>God is Good</option>
                       </select>
                     </div>
-                    <!-- input -->
-                    <div class="mb-3 col-lg-6">
-                      <label class="form-label">Weight</label>
-                      <input type="text" class="form-control" placeholder="Weight" required />
+
+                    <div class="col-12 mb-3">
+                      <label class="form-label" for="fname">Location Address<span class="text-danger">*</span></label>
+                      <input type="text" id="fname" class="form-control" name="fname"
+                        placeholder="Enter Your Delivery Address" required>
                     </div>
-                    <!-- input -->
+
                     <div class="mb-3 col-lg-6">
-                      <label class="form-label">Units</label>
-                      <select class="form-select">
-                        <option selected>Select Units</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
+                      <label class="form-label">State<span class="text-danger">*</span></label>
+                      <select onchange="toggleLGA(this);" name="state" id="state" class="form-control">
+                        <option value="Abia">Abia</option>
+                        <option value="Adamawa">Adamawa</option>
+                        <option value="Akwa Ibom">Akwa Ibom</option>
+                        <option value="Anambra">Anambra</option>
+                        <option value="Bauchi">Bauchi</option>
+                        <option value="Bayelsa">Bayelsa</option>
+                        <option value="Benue">Benue</option>
+                        <option value="Borno">Borno</option>
+                        <option value="Cross River">Cross River</option>
+                        <option value="Delta">Delta</option>
+                        <option value="Ebonyi">Ebonyi</option>
+                        <option value="Edo">Edo</option>
+                        <option value="Ekiti">Ekiti</option>
+                        <option value="Enugu">Enugu</option>
+                        <option value="FCT">Federal Capital Territory</option>
+                        <option value="Gombe">Gombe</option>
+                        <option value="Imo">Imo</option>
+                        <option value="Jigawa">Jigawa</option>
+                        <option value="Kaduna">Kaduna</option>
+                        <option value="Kano">Kano</option>
+                        <option value="Katsina">Katsina</option>
+                        <option value="Kebbi">Kebbi</option>
+                        <option value="Kogi">Kogi</option>
+                        <option value="Kwara">Kwara</option>
+                        <option value="Lagos">Lagos</option>
+                        <option value="Nasarawa">Nasarawa</option>
+                        <option value="Niger">Niger</option>
+                        <option value="Ogun">Ogun</option>
+                        <option value="Ondo">Ondo</option>
+                        <option value="Osun">Osun</option>
+                        <option value="Oyo">Oyo</option>
+                        <option value="Plateau">Plateau</option>
+                        <option value="Rivers">Rivers</option>
+                        <option value="Sokoto">Sokoto</option>
+                        <option value="Taraba">Taraba</option>
+                        <option value="Yobe">Yobe</option>
+                        <option value="Zamfara">Zamfara</option>
                       </select>
                     </div>
+
+                    <div class="mb-3 col-lg-6">
+                      <label class="form-label">LGA<span class="text-danger">*</span></label>
+                      <select name="lga" id="lga" class="form-control select-lga" required> </select>
+                    </div>
+
+                    <hr class="my-10">
+                    <h5 class="mb-4">Delivery Fee<span class="text-danger">*</span></h5>
+
+                    <div class="col-md-6 mb-3">
+                      <!-- input -->
+                      <label class="form-label" for="fee">Doorstep Delivery Fee</label>
+                      <input type="number" id="fee" name="fee" class="form-control" placeholder="enter your fee"
+                        required>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                      <!-- input -->
+                      <label class="form-label" for="fee">Pickup Delivery Fee</label>
+                      <input type="number" id="fee" name="fee" class="form-control" placeholder="enter your fee"
+                        required>
+                    </div>
+
+                    <hr class="my-10">
                     <div>
                       <div class="mb-3 col-lg-12 mt-5">
                         <!-- heading -->
-                        <h4 class="mb-3 h5">Product Images</h4>
+                        <h4 class="mb-3 h5">Location Images</h4>
 
                         <!-- input -->
                         <form action="#" class="d-block dropzone border-dashed rounded-2">
@@ -347,137 +389,30 @@
                         </form>
                       </div>
                     </div>
+
                     <!-- input -->
                     <div class="mb-3 col-lg-12 mt-5">
-                      <h4 class="mb-3 h5">Product Descriptions</h4>
+                      <h4 class="mb-3 h5">Location Descriptions</h4>
                       <div class="py-8" id="editor"></div>
                     </div>
 
-                  </div>
+                    <div class="col-md-6 mb-3">
+                      <!-- btn -->
+                      <button type="submit" class="btn btn-primary">Save Changes</button>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                      <!-- btn -->
+                      <a href="locations.html" class="btn btn-warning text-white">Cancel</a>
+                    </div>
+
+                  </form>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-12">
-              <!-- card -->
-              <div class="card mb-6 card-lg">
-                <!-- card body -->
-                <div class="card-body p-6">
-                  <!-- input -->
-                  <div class="form-check form-switch mb-4">
-                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchStock" checked />
-                    <label class="form-check-label" for="flexSwitchStock">In Stock</label>
-                  </div>
-                  <!-- input -->
-                  <div>
-                    <div class="mb-3">
-                      <label class="form-label">Product Code</label>
-                      <input type="text" class="form-control" placeholder="Enter Product Title" />
-                    </div>
-                    <!-- input -->
-                    <div class="mb-3">
-                      <label class="form-label">Product SKU</label>
-                      <input type="text" class="form-control" placeholder="Enter Product Title" />
-                    </div>
-                    <!-- input -->
-                    <div class="mb-3">
-                      <label class="form-label" id="productSKU">Status</label><br />
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                          value="option1" checked />
-                        <label class="form-check-label" for="inlineRadio1">Active</label>
-                      </div>
-                      <!-- input -->
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                          value="option2" />
-                        <label class="form-check-label" for="inlineRadio2">Disabled</label>
-                      </div>
-                      <!-- input -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- card -->
-              <div class="card mb-6 card-lg">
-                <!-- card body -->
-                <div class="card-body p-6">
-                  <!-- input -->
-                  <div class="form-check form-switch mb-4">
-                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchStock" checked />
-                    <label class="form-check-label" for="flexSwitchStock">Product Discount</label>
-                  </div>
-                  <!-- input -->
-                  <div>
-                    <div class="mb-3">
-                      <label class="form-label">Coupon Code</label>
-                      <input type="text" class="form-control" placeholder="Enter Product Title" />
-                    </div>
-                    <!-- input -->
-                    <div class="mb-3">
-                      <label class="form-label">Discount Amount</label>
-                      <input type="text" class="form-control" placeholder="Enter in percentages like 20 to 30%" />
-                    </div>
-                    <!-- input -->
-                    <div class="mb-3">
-                      <label class="form-label" id="productSKU">Status</label><br />
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                          value="option1" checked />
-                        <label class="form-check-label" for="inlineRadio1">Active</label>
-                      </div>
-                      <!-- input -->
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                          value="option2" />
-                        <label class="form-check-label" for="inlineRadio2">Disabled</label>
-                      </div>
-                      <!-- input -->
-                    </div>
-                  </div>
-                </div>
-              </div>
 
-              <!-- card -->
-              <div class="card mb-6 card-lg">
-                <!-- card body -->
-                <div class="card-body p-6">
-                  <h4 class="mb-4 h5">Product Price</h4>
-                  <!-- input -->
-                  <div class="mb-3">
-                    <label class="form-label">Regular Price</label>
-                    <input type="text" class="form-control" placeholder="₦0.00" />
-                  </div>
-                  <!-- input -->
-                  <div class="mb-3">
-                    <label class="form-label">Sale Price</label>
-                    <input type="text" class="form-control" placeholder="₦0.00" />
-                  </div>
-                </div>
-              </div>
-              <!-- card -->
-              <div class="card mb-6 card-lg">
-                <!-- card body -->
-                <div class="card-body p-6">
-                  <h4 class="mb-4 h5">Meta Data</h4>
-                  <!-- input -->
-                  <div class="mb-3">
-                    <label class="form-label">Meta Title</label>
-                    <input type="text" class="form-control" placeholder="Title" />
-                  </div>
-
-                  <!-- input -->
-                  <div class="mb-3">
-                    <label class="form-label">Meta Description</label>
-                    <textarea class="form-control" rows="3" placeholder="Meta Description"></textarea>
-                  </div>
-                </div>
-              </div>
-              <!-- button -->
-              <div class="d-grid">
-                <a href="#" class="btn btn-primary"> Create Product </a>
-              </div>
-            </div>
           </div>
+
         </div>
       </main>
     </div>
