@@ -42,8 +42,9 @@
   <div>
     <nav class="navbar navbar-expand-lg navbar-glass">
       <div class="container-fluid">
-        <div class="d-flex justify-content-between align-items-center w-100">
+        <div class="d-flex justify-content-between align-items-center ">
           <div class="d-flex align-items-center">
+
             <a class="text-inherit d-block d-xl-none me-4" data-bs-toggle="offcanvas" href="#offcanvasExample"
               role="button" aria-controls="offcanvasExample">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
@@ -53,9 +54,19 @@
               </svg>
             </a>
 
-            <form role="search">
-              <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
-            </form>
+            <div class="row mt-5">
+              <!-- form -->
+              <div class="col-6">
+                <form class="d-flex" role="search">
+                  <input class="form-control" type="search" placeholder="Search Dashboard" aria-label="Search" />
+                </form>
+              </div>
+              <!-- select option -->
+              <div class="col-6 mt-1">
+                <h5>Super Admin <span class="badge bg-light-primary text-dark-primary">Logged in</span></h5>
+              </div>
+            </div>
+
           </div>
 
         </div>
